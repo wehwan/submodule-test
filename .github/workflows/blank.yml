@@ -40,7 +40,9 @@ jobs:
         uses: peter-evans/repository-dispatch@v1
         with:
           #token: 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
+          token: ${{ secrets.REPO_ACCESS_TOKEN}} 
           repository: wehwan/docs-auto-test
-          event-type: build-project
+          #event-type: build-project
+          event-type: my-event
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
           #client-payload: '{"submodule": "${{ github.repository }}"}'
