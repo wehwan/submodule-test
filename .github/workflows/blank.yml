@@ -39,7 +39,7 @@ jobs:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v1
         with:
-          token: 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
+          #token: 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
           repository: wehwan/docs-auto-test
           event-type: build-project
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
