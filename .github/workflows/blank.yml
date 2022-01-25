@@ -42,4 +42,5 @@ jobs:
           token: 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
           repository: wehwan/docs-auto-test
           event-type: build-project
-          client-payload: '{"submodule": "${{ github.repository }}"}'
+          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
+          #client-payload: '{"submodule": "${{ github.repository }}"}'
