@@ -39,7 +39,7 @@ jobs:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v1
         with:
-          token: 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
+          token: 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
           repository: wehwan/docs-auto-test
           event-type: build-project
           client-payload: '{"submodule": "${{ github.repository }}"}'
