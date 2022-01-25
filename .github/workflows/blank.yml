@@ -39,7 +39,7 @@ jobs:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v1
         with:
-          token: ${{ secrets.REPO_ACCESS_TOKEN}} 
+          token: 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
           repository: wehwan/docs-auto-test
           #event-type: build-project
           event-type: my-event
